@@ -13,18 +13,9 @@ namespace Lab2.Controllers
             return View();
         }
 
-        public IActionResult Food()
+        public IActionResult Details(string cat)
         {
-            return View();
-        }
-
-        public IActionResult Tech()
-        {
-            return View();
-        }
-
-        public IActionResult Sports()
-        {
+            ViewBag.cat = cat;
             return View();
         }
     }
